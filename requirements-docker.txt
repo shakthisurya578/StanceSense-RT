@@ -1,0 +1,13 @@
+# Linux (Docker) packages for StanceSense-RT: the same versions as requirements.txt
+# wherever a Linux wheel exists. opencv-contrib-python matches the Windows .venv.
+# No TensorFlow: the squat check is rule-based.
+mediapipe==0.10.14
+numpy==1.26.4
+opencv-contrib-python==4.11.0.86
+protobuf==4.25.9
+scipy==1.17.1
+pyyaml==6.0.3
+streamlit==1.37.1
+pandas==2.2.2
+matplotlib==3.11.1
+pytest==9.1.1

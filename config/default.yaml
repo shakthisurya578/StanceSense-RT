@@ -1,0 +1,14 @@
+# Camera + pose runtime configuration.
+camera:
+  source: 0          # 0 = default webcam
+  width: 640
+  height: 480
+  fps: 30
+pose:
+  model_complexity: 1     # 0=fast/less-accurate, 1=balanced (real-time on CPU), 2=accurate/slow
+  smooth_landmarks: true
+  min_detection_confidence: 0.5
+  min_tracking_confidence: 0.5
+assessment:
+  plateau_min_seconds: 0.5   # angle must stay stable this long to accept an extremum
+  plateau_tol_deg: 3.0       # "stable" = variation within +/- this many degrees

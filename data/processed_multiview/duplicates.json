@@ -1,0 +1,195 @@
+{
+  "source": "Dataset Exercise Quality-wise.zip",
+  "n_duplicate_groups": 33,
+  "n_excluded": 47,
+  "reasons": {
+    "extra copy, same person/label/view": 20,
+    "same recording filed under different people": 20,
+    "same recording filed as squat and as non-squat": 2,
+    "same recording filed under different camera views": 5
+  },
+  "groups": [
+    [
+      "subject_003_squat_bad_diagonal",
+      "subject_003_squat_good_diagonal"
+    ],
+    [
+      "subject_005_shoulder_bad_side",
+      "subject_006_tricep_bad_side"
+    ],
+    [
+      "subject_005_shoulder_good_side",
+      "subject_006_tricep_good_side"
+    ],
+    [
+      "subject_005_squat_bad_side",
+      "subject_006_squat_bad_side"
+    ],
+    [
+      "subject_005_squat_good_side",
+      "subject_006_squat_good_side"
+    ],
+    [
+      "subject_007_back_bad_diagonal",
+      "subject_007_squat_good_diagonal"
+    ],
+    [
+      "subject_010_push_up_good_side",
+      "subject_013_push_up_good_side"
+    ],
+    [
+      "subject_014_push_up_bad_side",
+      "subject_020_push_up_bad_side"
+    ],
+    [
+      "subject_015_bicep_curl_bad_side",
+      "subject_026_bicep_curl_bad_side"
+    ],
+    [
+      "subject_015_bicep_curl_good_side",
+      "subject_026_bicep_curl_good_side"
+    ],
+    [
+      "subject_015_shoulder_bad_side",
+      "subject_015_tricep_bad_side"
+    ],
+    [
+      "subject_015_squat_good_side",
+      "subject_026_squat_bad_side"
+    ],
+    [
+      "subject_016_shoulder_bad_side",
+      "subject_016_shoulder_good_side"
+    ],
+    [
+      "subject_017_bicep_curl_bad_diagonal",
+      "subject_017_bicep_curl_good_diagonal"
+    ],
+    [
+      "subject_019_back_bad_diagonal",
+      "subject_020_back_bad_diagonal"
+    ],
+    [
+      "subject_019_push_up_bad_side",
+      "subject_019_push_up_good_side"
+    ],
+    [
+      "subject_020_shoulder_bad_side",
+      "subject_020_tricep_bad_side"
+    ],
+    [
+      "subject_020_shoulder_good_side",
+      "subject_020_tricep_good_side"
+    ],
+    [
+      "subject_021_bicep_curl_bad_side",
+      "subject_021_bicep_curl_good_side"
+    ],
+    [
+      "subject_023_abs_bad_diagonal",
+      "subject_023_abs_good_diagonal"
+    ],
+    [
+      "subject_023_abs_bad_front",
+      "subject_023_abs_good_front"
+    ],
+    [
+      "subject_023_back_bad_diagonal",
+      "subject_023_back_bad_side",
+      "subject_023_back_good_diagonal"
+    ],
+    [
+      "subject_023_back_bad_front",
+      "subject_023_back_good_front"
+    ],
+    [
+      "subject_023_bicep_curl_bad_front",
+      "subject_023_bicep_curl_good_front"
+    ],
+    [
+      "subject_023_bicep_curl_bad_side",
+      "subject_023_bicep_curl_good_side"
+    ],
+    [
+      "subject_023_push_up_bad_front",
+      "subject_023_push_up_good_front"
+    ],
+    [
+      "subject_023_shoulder_bad_diagonal",
+      "subject_023_shoulder_good_front"
+    ],
+    [
+      "subject_023_shoulder_bad_side",
+      "subject_023_shoulder_good_side"
+    ],
+    [
+      "subject_023_squat_bad_side",
+      "subject_023_squat_good_side"
+    ],
+    [
+      "subject_023_tricep_bad_diagonal",
+      "subject_023_tricep_good_diagonal"
+    ],
+    [
+      "subject_024_abs_bad_front",
+      "subject_024_abs_good_front"
+    ],
+    [
+      "subject_024_bicep_curl_bad_side",
+      "subject_024_bicep_curl_good_side"
+    ],
+    [
+      "subject_024_tricep_bad_front",
+      "subject_024_tricep_good_front"
+    ]
+  ],
+  "excluded": {
+    "subject_003_squat_good_diagonal": "duplicate of subject_003_squat_bad_diagonal",
+    "subject_005_shoulder_bad_side": "same recording filed under different people",
+    "subject_006_tricep_bad_side": "same recording filed under different people",
+    "subject_005_shoulder_good_side": "same recording filed under different people",
+    "subject_006_tricep_good_side": "same recording filed under different people",
+    "subject_005_squat_bad_side": "same recording filed under different people",
+    "subject_006_squat_bad_side": "same recording filed under different people",
+    "subject_005_squat_good_side": "same recording filed under different people",
+    "subject_006_squat_good_side": "same recording filed under different people",
+    "subject_007_back_bad_diagonal": "same recording filed as squat and as non-squat",
+    "subject_007_squat_good_diagonal": "same recording filed as squat and as non-squat",
+    "subject_010_push_up_good_side": "same recording filed under different people",
+    "subject_013_push_up_good_side": "same recording filed under different people",
+    "subject_014_push_up_bad_side": "same recording filed under different people",
+    "subject_020_push_up_bad_side": "same recording filed under different people",
+    "subject_015_bicep_curl_bad_side": "same recording filed under different people",
+    "subject_026_bicep_curl_bad_side": "same recording filed under different people",
+    "subject_015_bicep_curl_good_side": "same recording filed under different people",
+    "subject_026_bicep_curl_good_side": "same recording filed under different people",
+    "subject_015_tricep_bad_side": "duplicate of subject_015_shoulder_bad_side",
+    "subject_015_squat_good_side": "same recording filed under different people",
+    "subject_026_squat_bad_side": "same recording filed under different people",
+    "subject_016_shoulder_good_side": "duplicate of subject_016_shoulder_bad_side",
+    "subject_017_bicep_curl_good_diagonal": "duplicate of subject_017_bicep_curl_bad_diagonal",
+    "subject_019_back_bad_diagonal": "same recording filed under different people",
+    "subject_020_back_bad_diagonal": "same recording filed under different people",
+    "subject_019_push_up_good_side": "duplicate of subject_019_push_up_bad_side",
+    "subject_020_tricep_bad_side": "duplicate of subject_020_shoulder_bad_side",
+    "subject_020_tricep_good_side": "duplicate of subject_020_shoulder_good_side",
+    "subject_021_bicep_curl_good_side": "duplicate of subject_021_bicep_curl_bad_side",
+    "subject_023_abs_good_diagonal": "duplicate of subject_023_abs_bad_diagonal",
+    "subject_023_abs_good_front": "duplicate of subject_023_abs_bad_front",
+    "subject_023_back_bad_diagonal": "same recording filed under different camera views",
+    "subject_023_back_bad_side": "same recording filed under different camera views",
+    "subject_023_back_good_diagonal": "same recording filed under different camera views",
+    "subject_023_back_good_front": "duplicate of subject_023_back_bad_front",
+    "subject_023_bicep_curl_good_front": "duplicate of subject_023_bicep_curl_bad_front",
+    "subject_023_bicep_curl_good_side": "duplicate of subject_023_bicep_curl_bad_side",
+    "subject_023_push_up_good_front": "duplicate of subject_023_push_up_bad_front",
+    "subject_023_shoulder_bad_diagonal": "same recording filed under different camera views",
+    "subject_023_shoulder_good_front": "same recording filed under different camera views",
+    "subject_023_shoulder_good_side": "duplicate of subject_023_shoulder_bad_side",
+    "subject_023_squat_good_side": "duplicate of subject_023_squat_bad_side",
+    "subject_023_tricep_good_diagonal": "duplicate of subject_023_tricep_bad_diagonal",
+    "subject_024_abs_good_front": "duplicate of subject_024_abs_bad_front",
+    "subject_024_bicep_curl_good_side": "duplicate of subject_024_bicep_curl_bad_side",
+    "subject_024_tricep_good_front": "duplicate of subject_024_tricep_bad_front"
+  }
+}

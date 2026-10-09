@@ -1,0 +1,48 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# datasets (download them as described in README.md); only the duplicate list is kept,
+# because the Verification tab and the evaluation script read it
+data/raw/*
+data/labeled/*
+!data/raw/.gitkeep
+!data/labeled/.gitkeep
+data/mm-fit/
+data/A Multi-View Raw Video Dataset*/
+data/processed_multiview/*
+!data/processed_multiview/duplicates.json
+data/*.crdownload
+data/Unconfirmed*
+
+# personal data: the assessment database and webcam recordings
+data/*.db
+recordings/
+submission/
+*.mkv
+*.avi
+*.mp4
+*.wav
+*.m4a
+
+# trained-model leftovers and generated images
+models/*.keras
+models/*.pkl
+models/*.npz
+demo_output/*.png
+demo_output/**/*.png
+
+# reports and coursework documents (kept out of the public repo)
+docs/*.docx
+docs/*.pdf
+docs/*.zip
+docs/tarp_report/
+docs/tarp_submissions/
+~$*
+*.tmp
+
+# local tool state
+.streamlit/
+.claude/

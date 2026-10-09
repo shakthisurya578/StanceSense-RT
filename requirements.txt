@@ -1,0 +1,21 @@
+# StanceSense-RT - Python packages (Python 3.11, CPU only)
+#
+#   python -m venv .venv
+#   .venv\Scripts\python.exe -m pip install -r requirements.txt
+#
+# These are the versions in the project's .venv. No TensorFlow: the squat check is
+# rule-based and nothing is trained.
+mediapipe==0.10.14        # BlazePose: 33 body landmarks per camera frame
+opencv-python==4.11.0.86  # webcam capture, the camera window, video files
+numpy==1.26.4             # all the geometry
+scipy==1.17.1             # peak finding for the reference rep count (e2e_rule_classifier.py)
+PyYAML==6.0.3             # config/*.yaml
+streamlit==1.37.1         # the dashboard
+pandas==2.2.2             # tables in the dashboard (Streamlit uses it)
+matplotlib==3.11.1        # offline demo figure and report figures
+pillow==10.4.0            # app icon and report images
+python-docx==1.2.0        # builds the TARP report (.docx)
+pytest==9.1.1             # tests
+
+# mediapipe pulls in jax/jaxlib, which pose estimation does not use. If anything
+# complains about ml_dtypes, remove them:  pip uninstall -y jax jaxlib

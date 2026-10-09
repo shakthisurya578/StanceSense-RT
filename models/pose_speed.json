@@ -1,0 +1,20 @@
+{
+  "frames_timed": 300,
+  "frame_size": [
+    360,
+    640
+  ],
+  "median_ms": 18.3,
+  "mean_ms": 18.5,
+  "p90_ms": 19.9,
+  "fps_at_median": 54.7,
+  "pose_found_frac": 1.0,
+  "model_complexity": 1,
+  "mediapipe": "0.10.14",
+  "model_files_mb": {
+    "pose_detection.tflite": 2.96,
+    "pose_landmark_full.tflite": 6.44
+  },
+  "cpu": "13th Gen Intel(R) Core(TM) i5-13450HX",
+  "source": "Multi-View clip subject_002_squat_good_front"
+}

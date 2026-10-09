@@ -1,0 +1,21 @@
+StanceSense-RT end-to-end demo - MM-Fit w04
+==========================================================================
+
+1. FUNCTIONAL HIP-ROTATION PROFILE
+   IR 19.9 deg / ER 27.1 deg   arc 47.0 deg   bias -3.6 deg   pattern balanced
+   Functional hip rotation, reported qualitatively: balanced (fairly balanced - a near-generic stance should already suit you). This is a movement-screen signal from video, not a radiographic femoral/acetabular version measurement, and it carries no validated angular accuracy.
+
+2. RECOMMENDED STANCE
+   1.06x hip width, 18 deg toe-out
+   Recommended start: 1.06x hip width, 18 toe-out - your rotation is fairly balanced, so a near-generic stance should already suit you. (functional rotation IR 20 / ER 27, arc 47, pattern balanced.) Left and right rotation differ noticeably - expect a slight stance offset between feet. This is a STARTING stance; the live-squat check will confirm or nudge it.
+
+3. SQUAT RUN (rule-based classifier)
+   frames 2899-3614: true 10, counted 10, confirmed 10, best depth 0.64
+   frames 4070-4858: true 10, counted 10, confirmed 10, best depth 0.83
+   frames 6042-6774: true 10, counted 10, confirmed 10, best depth 0.86
+   TOTAL true 30, counted 30, confirmed 30, rejected 0
+
+3b. SQUAT-BASED STANCE ADVICE
+   Measured stance NARROW (1.27x hip width) -> recommended NARROW: no width-related problem measured - keep this stance
+
+4. STORED skipped

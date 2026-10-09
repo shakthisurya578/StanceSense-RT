@@ -1,0 +1,15 @@
+# Large or machine-specific folders stay out of the image; data/ and models/ are
+# mounted as volumes by docker-compose.yml instead.
+.venv
+venv
+.git
+.claude
+.streamlit
+**/__pycache__
+**/*.pyc
+.pytest_cache
+data
+demo_output
+recordings
+docs
+*.db

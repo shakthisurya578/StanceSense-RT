@@ -1,0 +1,38 @@
+# StanceSense-RT with Docker
+#
+#   docker compose up --build -d                  dashboard -> http://localhost:8501
+#   docker compose logs -f dashboard              its output
+#   docker compose down                           stop it
+#
+#   docker compose run --rm tools                                         run the test suite
+#   docker compose run --rm tools python scripts/eval_rule_classifier.py --split eval
+#   docker compose run --rm tools python scripts/demo_end_to_end_mmfit.py --workout w19 --no-store
+#
+# ./data, ./models and ./demo_output are shared with the host, so assessments saved by
+# the host's live camera run (python scripts/live_assessment.py) show up in History.
+# The camera itself cannot be used from a container on Windows - see the Dockerfile.
+services:
+  dashboard:
+    build:
+      context: .
+    image: stancesense-rt:latest
+    ports:
+      - "8501:8501"
+    environment:
+      STANCESENSE_IN_DOCKER: "1"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./demo_output:/app/demo_output
+    restart: unless-stopped
+
+  tools:
+    build:
+      context: .
+    image: stancesense-rt:latest
+    profiles: ["tools"]
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./demo_output:/app/demo_output
+    command: ["pytest", "-q", "-p", "no:cacheprovider"]

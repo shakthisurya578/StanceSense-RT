@@ -1,0 +1,15 @@
+# Tunable constants for the transparent stance-recommendation rule layer (Algorithm 3).
+# These are STARTING points, meant to be refined on your own validation data.
+toe_out:
+  base_deg: 15.0    # BASE_TOE  - generic starting toe-out
+  k: 0.8            # K_TOE     - degrees of extra toe-out per degree of ER dominance
+  min_deg: 5.0      # MIN_TOE
+  max_deg: 30.0     # MAX_TOE
+width:
+  base_factor: 1.0  # BASE_W    - multiples of hip width
+  k: 0.02           # K_W       - width gain per degree of ER dominance
+  min_factor: 0.9   # MIN_W
+  max_factor: 1.6   # MAX_W
+symmetry:
+  tol_deg: 8.0      # SYM_TOL   - |bias_L - bias_R| above this flags asymmetry
+arc_reference_deg: 60.0   # a "normal" total rotation arc; small arc scales width down
